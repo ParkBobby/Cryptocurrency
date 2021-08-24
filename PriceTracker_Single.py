@@ -9,6 +9,7 @@ coin_list = ['COLA']
 price_old = 0
 while True:
     for i,coin in enumerate(coin_list):
+        
         # Get time and price
         now = datetime.datetime.now()
         price = pybithumb.get_current_price(coin)
